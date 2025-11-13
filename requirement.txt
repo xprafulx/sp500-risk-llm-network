@@ -1,0 +1,8 @@
+openai==2.6.1
+python-dotenv==1.2.1
+pydantic==2.12.3
+datasets==2.21.0
+pandas==2.2.3
+tqdm==4.67.1
+matplotlib==3.10.7
+networkx==3.5
