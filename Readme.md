@@ -85,7 +85,9 @@ This behavior is expected given our prompt design.
 
 
 6. Knowledge Graph / Network Construction
+
 We built a bipartite knowledge graph linking companies to the dominant risk type extracted from their earnings calls. Each company and each risk type is represented as a node, and edges connect them when a risk is mentioned. The graph also stores useful metadata such as year, confidence, and a short summary. A bipartite setup was chosen because companies only connect to risks, not to each other, making the structure simple and interpretable. This graph helps us see which risks are most widespread across firms and provides the basis for our centrality analysis and insights.
 
-7. Network Analysis
+8. Network Analysis
+
 We analyzed the bipartite company–risk graph using degree centrality to understand which risks affect the most companies. The results show that Macroeconomic risk dominates with 27 connected companies, followed by Market Conditions (10) and Supply Chain (9). This suggests that broad economic uncertainty is the most common concern across firms. On the company side, most firms report only one dominant risk, but a few—like C.H. Robinson Worldwide and Zoetis Inc.—connect to multiple risks. We also generated a small risk–risk co-occurrence network, where only three risks overlapped across companies, indicating that most risks occur independently rather than together. Overall, the network structure highlights the concentration of risk exposure and the central role of macroeconomic conditions in shaping corporate narratives.
