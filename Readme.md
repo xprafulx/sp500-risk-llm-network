@@ -5,10 +5,10 @@ This is a quick assignment to try out some of the methods we worked on in this m
 ***Objectives***
 
 We use an LLM combined with network analysis on a real text corpus. Our objectives are as follows:
-1. Extract structured information from text using an LLM.
-2. Explore it with basic descriptive statistics.
-3. Build a knowledge graph or network from the extracted information.
-4. Analyze the resulting network to uncover interesting patterns.
+* Extract structured information from text using an LLM.
+* Explore it with basic descriptive statistics.
+* Build a knowledge graph or network from the extracted information.
+* Analyze the resulting network to uncover interesting patterns.
 
 2. Data Loading and Sampling
 We used the S&P 500 Earnings Call Transcripts dataset from Hugging Face (Kurry, 2024). After filtering the dataset to the years 2023–2025, we selected only transcripts with valid company_name and company_id values to avoid missing-value issues. From this complete subset, we randomly sampled 500 transcripts to keep the LLM extraction process manageable under API rate limits.
@@ -77,11 +77,11 @@ As a result, secondary risks were intentionally not captured.
 This behavior is expected given our prompt design.
 
 ⚠️ Limitations and Systematic Errors
-1. The model outputs only one main risk even when multiple risks are discussed.
-2. Risk labels are mostly consistent, but the chosen category can shift depending on sentence phrasing.
-3. Some summaries are brief and may overlook important nuance.
-4. The model often selects broad categories (e.g., Macroeconomic) instead of more specific risks.
-5. Only 60 transcripts were analyzed, so results may not represent the full dataset of ~33,000 transcripts.
+* The model outputs only one main risk even when multiple risks are discussed.
+* Risk labels are mostly consistent, but the chosen category can shift depending on sentence phrasing.
+* Some summaries are brief and may overlook important nuance.
+* The model often selects broad categories (e.g., Macroeconomic) instead of more specific risks.
+* Only 60 transcripts were analyzed, so results may not represent the full dataset of ~33,000 transcripts.
 
 
 6. Knowledge Graph / Network Construction
